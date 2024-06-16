@@ -1,0 +1,23 @@
+$yellow: hsl(47, 88%, 63%);
+$white:hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 7%);
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('/public/assets/fonts/Figtree-SemiBold.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('/public/assets/fonts/Figtree-ExtraBold.ttf');
+  font-weight: 800;
+}
+
+* {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+}
