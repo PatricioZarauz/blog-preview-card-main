@@ -49,7 +49,7 @@ footer {
   border: #121212 solid 0.1rem;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem #121212;
-  transition: box-shadow 400ms ease-in;
+  transition: box-shadow 300ms ease-in;
   display: flex;
   flex-direction: column;
   gap: 1.3rem; }
