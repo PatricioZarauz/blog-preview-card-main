@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/images/favicon-32x32.ico">
-  
-  <title>Frontend Mentor | Blog preview card</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/assets/images/favicon-32x32.ico"
+    />
+    <link rel="stylesheet" href="/public/stylesheets/index.css" />
 
-  Learning
+    <title>Frontend Mentor | Blog preview card</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <img
+          class="card-cover"
+          src="/public/assets/images/illustration-article.svg"
+          alt="HTML & CSS foundations, blog cover image"
+          role="img"
+        />
+        <div class="card-content">
+          <ul class="card-tag-list">
+            <li class="card-tag-item">
+              <h5>Learning</h5>
+            </li>
+          </ul>
+          <span class="card-date">Published 21 Dec 2023</span>
+          <a href="#" target="_blank"><h3>HTML & CSS foundations</h3></a>
+          <p>
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+          <div class="card-author">
+            <picture>
+              <source
+                src="/public/assets/images/image-avatar.webp"
+                type="image/webp"
+              />
+              <source
+                src="/public/assets/images/image-avatar.png"
+                type="image/png"
+              />
+              <img
+                src="/public/assets/images/image-avatar.png"
+                alt="Author's account photo"
+              />
+            </picture>
+            <h5 class="card-author-name">Greg Hooper</h5>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.
+      </p>
+      <p>Coded by <a href="#">Patricio Zarauz</a>.</p>
+    </footer>
+  </body>
 </html>
