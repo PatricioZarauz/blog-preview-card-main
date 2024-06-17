@@ -65,6 +65,7 @@ footer {
   border: $black solid 0.1rem;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem $black;
+  transition: box-shadow 400ms ease-in;
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
@@ -86,10 +87,34 @@ footer {
     a {
       text-decoration: none;
       color: inherit;
+      position: relative;
+    }
 
-      :hover {
-        color: $yellow;
-      }
+    span.text-overlay-paint {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      transform: translateX(-100%);
+      transition: transform 500ms ease;
+      font-size: inherit;
+      text-decoration: none;
+    }
+
+    a:hover span.text-overlay-paint {
+      transform: translateX(0);
+    }
+
+    span.text-overlay-paint::before {
+      display: inline-block;
+      content: attr(data-content);
+      color: $yellow;
+      transform: translateX(100%);
+      transition: transform 500ms ease;
+    }
+
+    a:hover span.text-overlay-paint::before {
+      transform: translateX(0);
     }
 
     p {

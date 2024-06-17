@@ -49,6 +49,7 @@ footer {
   border: #121212 solid 0.1rem;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem #121212;
+  transition: box-shadow 400ms ease-in;
   display: flex;
   flex-direction: column;
   gap: 1.3rem; }
@@ -63,9 +64,27 @@ footer {
       margin-bottom: 0.1rem; }
     .card .card-content a {
       text-decoration: none;
-      color: inherit; }
-      .card .card-content a :hover {
-        color: #f4d04e; }
+      color: inherit;
+      position: relative; }
+    .card .card-content span.text-overlay-paint {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      transform: translateX(-100%);
+      transition: transform 500ms ease;
+      font-size: inherit;
+      text-decoration: none; }
+    .card .card-content a:hover span.text-overlay-paint {
+      transform: translateX(0); }
+    .card .card-content span.text-overlay-paint::before {
+      display: inline-block;
+      content: attr(data-content);
+      color: #f4d04e;
+      transform: translateX(100%);
+      transition: transform 500ms ease; }
+    .card .card-content a:hover span.text-overlay-paint::before {
+      transform: translateX(0); }
     .card .card-content p {
       color: gray;
       margin-top: 0.2rem;
