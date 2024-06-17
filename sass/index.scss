@@ -5,13 +5,13 @@ $black: hsl(0, 0%, 7%);
 
 @font-face {
   font-family: "Figtree";
-  src: url("../../public/assets/fonts/Figtree-SemiBold.ttf");
+  src: url("public/assets/fonts/Figtree-SemiBold.ttf");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Figtree";
-  src: url("../../public/assets/fonts/Figtree-ExtraBold.ttf");
+  src: url("public/assets/fonts/Figtree-ExtraBold.ttf");
   font-weight: 800;
 }
 
@@ -88,6 +88,7 @@ footer {
       text-decoration: none;
       color: inherit;
       position: relative;
+      overflow: hidden;
     }
 
     span.text-overlay-paint {
