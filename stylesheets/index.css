@@ -13,10 +13,13 @@
   font-size: 16px;
   margin: 0;
   padding: 0; }
+  @media only screen and (max-width: 600px) {
+    * {
+      font-size: 14px; } }
 
 body {
-  margin: 1rem;
-  height: calc(100vh - 2rem);
+  margin: 1.5rem;
+  height: calc(100vh - 3rem);
   display: grid;
   grid-template-areas: "header" "footer";
   grid-template-rows: 1fr min-content;
@@ -43,7 +46,8 @@ footer {
   box-shadow: 0.8rem 0.8rem #121212; }
 
 .card {
-  width: min-content;
+  max-width: 336px;
+  width: 100%;
   background-color: white;
   padding: 1.3rem;
   border: #121212 solid 0.1rem;
@@ -54,7 +58,9 @@ footer {
   flex-direction: column;
   gap: 1.3rem; }
   .card img.card-cover {
-    border-radius: 0.6rem; }
+    border-radius: 0.6rem;
+    max-width: 336px;
+    width: 100%; }
   .card .card-content {
     display: flex;
     flex-direction: column;
