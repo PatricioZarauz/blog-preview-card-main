@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Figtree";
-  src: url("public/assets/fonts/Figtree-SemiBold.ttf");
+  src: url("../public/assets/fonts/Figtree-SemiBold.ttf");
   font-weight: 500; }
 @font-face {
   font-family: "Figtree";
-  src: url("public/assets/fonts/Figtree-ExtraBold.ttf");
+  src: url("../public/assets/fonts/Figtree-ExtraBold.ttf");
   font-weight: 800; }
 * {
   font-family: "Figtree", sans-serif;
